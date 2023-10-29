@@ -5,6 +5,7 @@ import { assert } from "@cosmjs/utils";
 import { BaseAccount, ModuleAccount } from "cosmjs-types/cosmos/auth/v1beta1/auth";
 import {
   BaseVestingAccount,
+  ForeverVestingAccount,
   ContinuousVestingAccount,
   DelayedVestingAccount,
   PeriodicVestingAccount,
@@ -62,6 +63,11 @@ export function accountFromAny(input: Any): Account {
 
     // vesting
 
+    case "/cosmos.vesting.v1beta1.ForeverVestingAccount": {
+      const baseAccount = ForeverVestingAccount.decode(value)?.baseAccount;
+      assert(baseAccount);
+      return accountFromBaseAccount(baseAccount);
+    }
     case "/cosmos.vesting.v1beta1.BaseVestingAccount": {
       const baseAccount = BaseVestingAccount.decode(value)?.baseAccount;
       assert(baseAccount);
