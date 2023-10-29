@@ -864,7 +864,7 @@ __metadata:
     "@types/node": ^18
     "@typescript-eslint/eslint-plugin": ^5.54.0
     "@typescript-eslint/parser": ^5.54.0
-    cosmjs-types: ^0.8.0
+    cosmjs-types: "github:jmesworld/cosmjs-types#feat/forevervesting"
     eslint: ^7.5
     eslint-config-prettier: ^8.3.0
     eslint-import-resolver-node: ^0.3.4
@@ -2990,6 +2990,16 @@ __metadata:
     typescript: ~4.9
   languageName: unknown
   linkType: soft
+
+"cosmjs-types@github:jmesworld/cosmjs-types#feat/forevervesting":
+  version: 0.8.0
+  resolution: "cosmjs-types@https://github.com/jmesworld/cosmjs-types.git#commit=fcf08c550e4cef729450cf4ab7bd4086b3d0f81b"
+  dependencies:
+    long: ^4.0.0
+    protobufjs: ~6.11.2
+  checksum: facccb7eac539297c747bfbae84a5f0111a0876aefd4fc749d6752edeef70355051e15d78acb96b44536753964a128d8b2412ee0313b9a758083a1b798ae7c31
+  languageName: node
+  linkType: hard
 
 "cosmjs-types@npm:^0.8.0":
   version: 0.8.0
