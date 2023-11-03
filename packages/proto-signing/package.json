@@ -44,7 +44,7 @@
     "@cosmjs/encoding": "workspace:^",
     "@cosmjs/math": "workspace:^",
     "@cosmjs/utils": "workspace:^",
-    "cosmjs-types": "^0.8.0",
+    "cosmjs-types": "github:jmesworld/cosmjs-types#feat/forevervesting",
     "long": "^4.0.0"
   },
   "devDependencies": {
